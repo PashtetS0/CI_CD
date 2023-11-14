@@ -1,0 +1,6 @@
+#! /bin/bash/expect
+
+spawn /home/${USER}/3.2-crud/deploy.sh
+expect "password"
+send -- "1\r"
+expect eof
